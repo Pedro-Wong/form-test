@@ -1,0 +1,64 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  display: grid;
+  grid-template-areas:
+    "a1"
+    "a2"
+    "a3";
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  border: 2px solid;
+  background: #2f323b;
+}
+header nav {
+  grid-area: a1;
+  align-self: center;
+  justify-self: center;
+}
+header button {
+  width: 30vw;
+  height: 8vh;
+  grid-area: a3;
+  justify-self: center;
+  margin: 10px 0;
+  border-radius: 10px;
+  opacity: 0.6;
+  font-size: 1.2rem;
+  background: black;
+  color: #F0F4EF;
+}
+
+nav a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 2px;
+    color: #DDDFDF;
+}
+
+nav a:hover{
+    color: #DAD7CD;
+}
+
+
+.box-login {
+  width: 25vw;
+  height: 7vh;
+  border-radius: 10px;
+}
+.loggin {
+  display: flex;
+  grid-area: a2;
+  justify-self: center;
+  align-self: center;
+  color: #DAD7CD;
+}
+
+.log {
+  font-size: 1.2rem;
+  margin-right: 1.2rem ;
+}
