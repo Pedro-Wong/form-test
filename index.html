@@ -28,15 +28,81 @@
             name="password"
           />
         </div>
-        
       </div>
       <button>Sing in</button>
     </header>
     <main>
-        main
+      <form action="">
+        <div class="form one">
+          <label for="name">Nome completo: </label>
+          <input type="text" id="name" placeholder="Put here your full name" />
+        </div>
+
+        <div class="form two">
+          <label for="data">Date of birth: </label>
+          <input type="date" name="" id="" />
+        </div>
+
+        <div class="form radio1">
+          <div>
+            <label for="identification">CPF: </label>
+            <input type="radio" name="cpf" id="identification" />
+          </div>
+          <div>
+            <label for="cpf">CNPJ: </label>
+            <input type="radio" name="cpf" id="cpf" />
+          </div>
+          <div class="text-radio">
+            <input type="text" placeholder="Digit Number" />
+          </div>
+        </div>
+
+        <div class="form body">
+          <div>
+            <label for="pais">País: </label>
+            <select name="pais" id="pais">
+              <option value="Brasil">Brasil</option>
+              <option value="Argentina">Argentina</option>
+              <option value="Chile">Chile</option>
+              <option value="Peru">Peru</option>
+              <option value="Colombia">Colombia</option>
+            </select>
+          </div>
+          <div>
+            <label for="cidadania">Cidadania: </label>
+            <input
+              type="text"
+              id="cidadania"
+              placeholder="Preencher cidadania"
+              name="cidadania"
+              value="Cidadao"
+            />
+          </div>
+        </div>
+        <div class="form three">
+          <div>
+            <label for="celular">Celular:</label>
+            <input type="number" name="celular" id="celular" placeholder="99999-9999" />
+          </div>
+          <div>
+            <label for="postal">Código postal:</label>
+            <input type="number" name="celular" id="postal" placeholder="(00)" />
+          </div>
+          <div>
+            <label for="endereco">Endereço</label>
+            <input type="text" id="endereco" name="endereco" placeholder="Endereço residencial">
+          </div>
+          <div>
+            <label for="cidade">Cidade: </label>
+            <input type="text" id="cidade" name="cidade" placeholder="Cidade padrao">
+          </div>
+          <div>
+            <label for="estado">Estado </label>
+            <input type="text" id="estado" name="estado" placeholder="Estado UF">
+          </div>
+        </div>
+      </form>
     </main>
-    <footer>
-        rodape
-    </footer>
+    <footer>rodape</footer>
   </body>
 </html>
